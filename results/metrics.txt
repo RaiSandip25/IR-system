@@ -1,0 +1,93 @@
+======================================================================
+COMPREHENSIVE EVALUATION METRICS
+======================================================================
+
+Total Queries Evaluated: 152
+
+======================================================================
+VECTOR SPACE MODEL (VSM)
+======================================================================
+
+Core Metrics:
+  MAP (Mean Average Precision):  0.0104
+  R-Precision:                   0.0119
+
+Metrics @ K=5:
+  Precision@5:  0.0171
+  Recall@5:     0.0054
+  F1-Score@5:   0.0077
+  nDCG@5:       0.0164
+  ERR@5:        0.0230
+
+Metrics @ K=10:
+  Precision@10:  0.0151
+  Recall@10:     0.0098
+  F1-Score@10:   0.0109
+  nDCG@10:       0.0158
+  ERR@10:        0.0243
+
+======================================================================
+UNIGRAM LANGUAGE MODEL
+======================================================================
+
+Core Metrics:
+  MAP (Mean Average Precision):  0.0085
+  R-Precision:                   0.0100
+
+Metrics @ K=5:
+  Precision@5:  0.0145
+  Recall@5:     0.0051
+  F1-Score@5:   0.0067
+  nDCG@5:       0.0146
+  ERR@5:        0.0227
+
+Metrics @ K=10:
+  Precision@10:  0.0105
+  Recall@10:     0.0072
+  F1-Score@10:   0.0076
+  nDCG@10:       0.0128
+  ERR@10:        0.0243
+
+======================================================================
+DETAILED PERFORMANCE COMPARISON
+======================================================================
+
+Core Metrics Comparison:
+----------------------------------------------------------------------
+
+MAP:
+  VSM:        0.0104
+  Unigram LM: 0.0085
+  Winner:     VSM (+0.0018, +21.21%)
+
+R-Precision:
+  VSM:        0.0119
+  Unigram LM: 0.0100
+  Winner:     VSM (+0.0019, +18.91%)
+
+
+K-based Metrics Comparison:
+----------------------------------------------------------------------
+
+At K=5:
+  Precision@5    : VSM=0.0171, Unigram=0.0145  [VSM +18.2%]
+  Recall@5       : VSM=0.0054, Unigram=0.0051  [VSM +6.5%]
+  F1-Score@5     : VSM=0.0077, Unigram=0.0067  [VSM +15.5%]
+  nDCG@5         : VSM=0.0164, Unigram=0.0146  [VSM +12.9%]
+  ERR@5          : VSM=0.0230, Unigram=0.0227  [VSM +1.4%]
+
+At K=10:
+  Precision@10   : VSM=0.0151, Unigram=0.0105  [VSM +43.7%]
+  Recall@10      : VSM=0.0098, Unigram=0.0072  [VSM +36.3%]
+  F1-Score@10    : VSM=0.0109, Unigram=0.0076  [VSM +42.2%]
+  nDCG@10        : VSM=0.0158, Unigram=0.0128  [VSM +23.5%]
+  ERR@10         : VSM=0.0243, Unigram=0.0243
+
+======================================================================
+OVERALL WINNER (Based on MAP)
+======================================================================
+
+Winner: Vector Space Model (VSM)
+  MAP Improvement: 21.21%
+  Absolute Difference: 0.0018
+
